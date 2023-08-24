@@ -1,0 +1,132 @@
+@font-face {
+    font-family: titillium;
+    src: url(fonts/TitilliumWeb-Italic.ttf);
+    font-style: italic;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 50px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.bg-naranja{
+    background-color: orange;
+}
+
+.nopunto{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    background-color: rgb(211, 140, 7);
+}
+
+a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+
+.main{
+    min-height: 70vh;
+}
+
+.color1{
+    color: blue;
+}
+
+.color2{
+    color: red;
+}
+
+.main_img{
+    height: 250px;
+    width: auto;
+    display: inline-block;
+}
+
+.main_text{
+    display: inline-block;
+    vertical-align: top;
+    font-family: titillium;
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.subtitulo{
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.textos{
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+}
+
+.textos_p{
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+}
+
+.texto_extra{
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+.recuadro{
+    height: 20px;
+    width: 300px;
+}
+
+.padreFlex{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.flex_texto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.img_xd{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 30%);
+    gap: 2rem;
+    margin: 3rem 2rem 3rem 2rem;
+
+
+}
+
+.main_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width:600px){
+    main img{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 50%);
+    }
+}
